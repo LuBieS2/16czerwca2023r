@@ -1,0 +1,4 @@
+select firmy.id_firmy, count(data_i) 
+from instalacje Inner join Firmy on instalacje.id_firmy=firmy.id_firmy
+Group by instalacje.id_firmy
+Order by count(data_i) DESC;
